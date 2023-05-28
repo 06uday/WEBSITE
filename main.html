@@ -1,0 +1,73 @@
+<html>
+	<head>
+        <style>
+#feedback {
+  background-color: rgba(58, 152, 175, 0.7);
+  margin: 96px aut;
+  padding: 0px;
+  width: 70%;
+  min-width: 260px;
+}
+
+input {
+  padding: 10px;
+  width: 350px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+       </style>
+        <title>Computing</title>      
+		   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+
+<div class="sidenav"> 
+      <a href="main.html"><font size="5">About us</font></a>
+  <a href="computers.html"><font size="5">Computers in the workforce</font></a>
+    <a href="ADM.html"><font size="5">Automated Decision Making</font></a>
+    <a href="AI.html"><font size="5">Artificial Intelligence</font></a>
+    <a href="EE.html"><font size="5">Environmental Effects</font></a>
+    <a href="EI.html"><font size="5">Ethical issues</font></a>
+ 
+</div>
+
+<div class="content">
+  <h2 align="center"> <font size="150%"> <u> Computing Ethics </u> </font> </h2>
+    <br>
+  <p> <b> <u> <font size="7"> About Us </font> </u> </b> </p>
+  <p> <font size="4"> We are an environmentalist group who would like to provide you with information
+	about ethical issues arising from the use of computers now and in the future.</font> </p>
+  <p> <font size="4"> We will be talking about AI technology and ethical issues that rise from it as well as
+     the environmental effects that are produced as well as much more. </font>
+</p>
+<div>
+		<form id= "feedback" action= "MAILTO:222092@student.wqe.ac.uk" method="post"
+				enctype="text/plain">		
+			 <br> <h2> Feedback form </h2>
+			 First name:<br>
+			<input type="text" name="firstname"><br>
+			Last name:<br>
+			<input type="text" name="lastname"><br>
+			Email address:<br>
+			<input type="text" name="email"><br>
+			Comments:<br>
+			<textarea rows="3" cols="30" name ="comments">
+			</textarea><br><br>
+			<button type="button" onclick="validateForm()">Check</button>
+			<input type = "submit" value = "Submit"><br><br>			
+    </form>
+		<script>
+		function validateForm() {
+		var x = document.forms["feedback"]["firstname"].value;
+		if (x == "") {
+			alert("Name must be filled out");
+        return false;
+			}
+		}
+		</script>
+    </div>
+    </div>
+    </body>
+</html>
